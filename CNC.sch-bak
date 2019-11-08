@@ -1,0 +1,210 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v2.x A1
+U 1 1 5DC577F9
+P 8350 4350
+F 0 "A1" H 8350 3261 50  0000 C CNN
+F 1 "Arduino_Nano_v2.x" H 8350 3170 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 8500 3400 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf" H 8350 3350 50  0001 C CNN
+	1    8350 4350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8850 3750
+NoConn ~ 8850 3850
+NoConn ~ 8550 3350
+NoConn ~ 8450 3350
+NoConn ~ 8250 3350
+NoConn ~ 7850 3750
+NoConn ~ 7850 3850
+NoConn ~ 8850 4150
+NoConn ~ 8850 4950
+NoConn ~ 8850 5050
+NoConn ~ 8350 5350
+Text GLabel 7700 3950 0    50   Output ~ 0
+Step-X
+Text GLabel 7700 4050 0    50   Output ~ 0
+Step-Y
+Text GLabel 7700 4150 0    50   Output ~ 0
+Step-Z
+Text GLabel 7700 4250 0    50   Output ~ 0
+Dir-X
+Text GLabel 7700 4350 0    50   Output ~ 0
+Dir-Y
+Text GLabel 7700 4450 0    50   Output ~ 0
+Dir-Z
+Text GLabel 7700 4550 0    50   Output ~ 0
+Stepper
+Text GLabel 7700 4650 0    50   Output ~ 0
+Lim-x
+Text GLabel 7700 4750 0    50   Output ~ 0
+Lim-Y
+Text GLabel 7700 4850 0    50   Output ~ 0
+Spindle
+Text GLabel 7700 4950 0    50   Output ~ 0
+Lim-Z
+Text GLabel 7700 5050 0    50   Output ~ 0
+Spindle
+NoConn ~ 8850 4750
+Wire Wire Line
+	8850 4350 9000 4350
+Wire Wire Line
+	8850 4450 9000 4450
+Wire Wire Line
+	8850 4550 9000 4550
+Wire Wire Line
+	7850 5050 7700 5050
+Wire Wire Line
+	7850 4950 7700 4950
+Wire Wire Line
+	7850 4850 7700 4850
+Wire Wire Line
+	7850 4750 7700 4750
+Wire Wire Line
+	7850 4650 7700 4650
+Wire Wire Line
+	7850 4550 7700 4550
+Wire Wire Line
+	7850 4450 7700 4450
+Wire Wire Line
+	7850 4350 7700 4350
+Wire Wire Line
+	7850 4250 7700 4250
+Wire Wire Line
+	7850 4150 7700 4150
+Wire Wire Line
+	7850 4050 7700 4050
+Wire Wire Line
+	7850 3950 7700 3950
+Text GLabel 9000 5350 2    50   Input ~ 0
+GND-Diver
+Wire Wire Line
+	8450 5350 9000 5350
+$Comp
+L Connector:Screw_Terminal_01x06 J1
+U 1 1 5DC5FD3B
+P 1650 1250
+F 0 "J1" H 1730 1242 50  0000 L CNN
+F 1 "DRIVER X" H 1730 1151 50  0000 L CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x06_P5.00mm_45-Degree" H 1650 1250 50  0001 C CNN
+F 3 "~" H 1650 1250 50  0001 C CNN
+	1    1650 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J2
+U 1 1 5DC61AD6
+P 3100 1250
+F 0 "J2" H 3180 1242 50  0000 L CNN
+F 1 "DRIVER Y" H 3180 1151 50  0000 L CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x06_P5.00mm_45-Degree" H 3100 1250 50  0001 C CNN
+F 3 "~" H 3100 1250 50  0001 C CNN
+	1    3100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x06 J3
+U 1 1 5DC626A8
+P 4600 1250
+F 0 "J3" H 4680 1242 50  0000 L CNN
+F 1 "DRIVER Z" H 4680 1151 50  0000 L CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x06_P5.00mm_45-Degree" H 4600 1250 50  0001 C CNN
+F 3 "~" H 4600 1250 50  0001 C CNN
+	1    4600 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1250 1050 0    50   Input ~ 0
+Step-X
+Text GLabel 1250 1150 0    50   Input ~ 0
+GND-Diver
+Text GLabel 1250 1250 0    50   Input ~ 0
+Dir-X
+Text GLabel 1250 1350 0    50   Input ~ 0
+GND-Diver
+Text GLabel 1250 1450 0    50   Input ~ 0
+Stepper
+Text GLabel 1250 1550 0    50   Input ~ 0
+GND-Diver
+Wire Wire Line
+	1250 1050 1450 1050
+Wire Wire Line
+	1250 1150 1450 1150
+Wire Wire Line
+	1250 1250 1450 1250
+Wire Wire Line
+	1250 1350 1450 1350
+Wire Wire Line
+	1250 1450 1450 1450
+Wire Wire Line
+	1250 1550 1450 1550
+Text GLabel 2700 1050 0    50   Input ~ 0
+Step-Y
+Text GLabel 2700 1150 0    50   Input ~ 0
+GND-Diver
+Text GLabel 2700 1250 0    50   Input ~ 0
+Dir-Y
+Text GLabel 2700 1350 0    50   Input ~ 0
+GND-Diver
+Text GLabel 2700 1450 0    50   Input ~ 0
+Stepper
+Text GLabel 2700 1550 0    50   Input ~ 0
+GND-Diver
+Wire Wire Line
+	2700 1050 2900 1050
+Wire Wire Line
+	2700 1150 2900 1150
+Wire Wire Line
+	2700 1250 2900 1250
+Wire Wire Line
+	2700 1350 2900 1350
+Wire Wire Line
+	2700 1450 2900 1450
+Wire Wire Line
+	2700 1550 2900 1550
+Text GLabel 4150 1050 0    50   Input ~ 0
+Step-Z
+Text GLabel 4150 1150 0    50   Input ~ 0
+GND-Diver
+Text GLabel 4150 1250 0    50   Input ~ 0
+Dir-Z
+Text GLabel 4150 1350 0    50   Input ~ 0
+GND-Diver
+Text GLabel 4150 1450 0    50   Input ~ 0
+Stepper
+Text GLabel 4150 1550 0    50   Input ~ 0
+GND-Diver
+Wire Wire Line
+	4150 1050 4400 1050
+Wire Wire Line
+	4150 1150 4400 1150
+Wire Wire Line
+	4150 1250 4400 1250
+Wire Wire Line
+	4150 1350 4400 1350
+Wire Wire Line
+	4150 1450 4400 1450
+Wire Wire Line
+	4150 1550 4400 1550
+Text GLabel 9000 4350 2    50   Input ~ 0
+GND-Diver
+Text GLabel 9000 4450 2    50   Input ~ 0
+GND-Diver
+Text GLabel 9000 4550 2    50   Input ~ 0
+GND-Diver
+NoConn ~ 8850 4650
+NoConn ~ 8850 4850
+$EndSCHEMATC
